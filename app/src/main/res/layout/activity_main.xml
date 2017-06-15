@@ -1,28 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clipChildren="false"
-    android:background="@drawable/sea"
-    >
+    android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/paint"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:textColor="#000000"
-        android:text="画图"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sea"
+        android:clipChildren="false"
+        >
 
-    <Button
-        android:id="@+id/wuziqi"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:layout_centerInParent="true"
-        android:textColor="#000000"
-        android:text="五子棋View"/>
+        <LinearLayout
+            android:id="@+id/turn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clipChildren="false">
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/paint"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:text="画图"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/wuziqi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:text="五子棋View"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/trail1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/turn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#3490F0"
+            android:text="放缩"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/trail2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/trail1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#3490F0"
+            android:text="旋转"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/trail3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/trail2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#3490F0"
+            android:text="淡出"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/trail4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/trail3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#3490F0"
+            android:text="平移"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+</ScrollView>
