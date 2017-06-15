@@ -23,7 +23,7 @@
                 android:id="@+id/paint"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:text="画图"
                 android:textColor="#000000"/>
 
@@ -31,8 +31,16 @@
                 android:id="@+id/wuziqi"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:text="五子棋View"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/ges"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:text="触摸事件"
                 android:textColor="#000000"/>
 
         </LinearLayout>
@@ -45,7 +53,7 @@
             android:layout_below="@id/turn"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:background="#3490F0"
+            android:background="#8834ffd0"
             android:text="放缩"
             android:textColor="#fff"/>
 
@@ -56,7 +64,7 @@
             android:layout_below="@id/trail1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:background="#3490F0"
+            android:background="#8834ffd0"
             android:text="旋转"
             android:textColor="#fff"/>
 
@@ -67,7 +75,7 @@
             android:layout_below="@id/trail2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:background="#3490F0"
+            android:background="#8834ffd0"
             android:text="淡出"
             android:textColor="#fff"/>
 
@@ -78,7 +86,7 @@
             android:layout_below="@id/trail3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:background="#3490F0"
+            android:background="#8834ffd0"
             android:text="平移"
             android:textColor="#fff"
             android:layout_marginBottom="50dp"/>
