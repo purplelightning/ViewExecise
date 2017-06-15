@@ -11,3 +11,6 @@ local.properties
 # Gradle files
 .gradle
 
+/.gradle/
+将删除 app/libs/
+/.idea/
