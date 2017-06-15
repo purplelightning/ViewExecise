@@ -84,4 +84,15 @@
             android:layout_marginBottom="50dp"/>
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="底部"/>
+
+    </LinearLayout>
 </ScrollView>
