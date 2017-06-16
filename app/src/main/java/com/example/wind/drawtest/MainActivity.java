@@ -1,11 +1,8 @@
 package com.example.wind.drawtest;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -13,7 +10,6 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
     private WuziqiPanel wuziqiPanel;
@@ -67,11 +63,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         animation_tran = AnimationUtils.loadAnimation(MainActivity.this, R.anim.translate_btn);
         //只用java代码设置动画
         // 创建一个ScaleAnimation对象（以某个点为中心缩放）
-        ani_java = new ScaleAnimation(1, 0.1f, 1, 0.1f, Animation.RELATIVE_TO_SELF, 0.5f,
+        ani_java = new ScaleAnimation(1, 3.0f, 1, 3.0f, Animation.RELATIVE_TO_SELF, 0.5f,
                 Animation.RELATIVE_TO_SELF, 0.5f);
         ani_java.setStartOffset(500);// 设置动画执行之前等待的时间（单位：毫秒）
         ani_java.setDuration(2000);// 设置动画执行的时间（单位：毫秒）
-        ani_java.setFillAfter(true);
+        ani_java.setFillAfter(false);
 
     }
 
@@ -111,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.ges:
-                Intent intent3 = new Intent(MainActivity.this, TouchActivity.class);
+                Intent intent3 = new Intent(MainActivity.this, ObjectAnimatorActivity.class);
                 startActivity(intent3);
                 break;
 

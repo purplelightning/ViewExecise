@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".MyViewAcitivity">
         </activity>
-        <activity android:name=".TouchActivity">
+        <activity android:name=".ObjectAnimatorActivity">
         </activity>
     </application>
 
