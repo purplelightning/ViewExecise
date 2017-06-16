@@ -45,50 +45,75 @@
 
         </LinearLayout>
 
-
-        <Button
-            android:id="@+id/trail1"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@id/turn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="#8834ffd0"
-            android:text="放缩"
-            android:textColor="#fff"/>
+            android:layout_marginBottom="50dp">
 
-        <Button
-            android:id="@+id/trail2"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_below="@id/trail1"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="#8834ffd0"
-            android:text="旋转"
-            android:textColor="#fff"/>
+            <Button
+                android:id="@+id/all_start"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:background="#ff0000"
+                android:layout_marginTop="30dp"
+                android:text="开始动画"/>
 
-        <Button
-            android:id="@+id/trail3"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_below="@id/trail2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="#8834ffd0"
-            android:text="淡出"
-            android:textColor="#fff"/>
+            <Button
+                android:id="@+id/trail1"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/all_start"
+                android:background="#8834ffd0"
+                android:text="放缩"
+                android:textColor="#fff"/>
 
-        <Button
-            android:id="@+id/trail4"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_below="@id/trail3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="#8834ffd0"
-            android:text="平移"
-            android:textColor="#fff"
-            android:layout_marginBottom="50dp"/>
+            <Button
+                android:id="@+id/trail2"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/trail1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="#8834ffd0"
+                android:text="旋转"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/trail3"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/trail2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="#8834ffd0"
+                android:text="淡出"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/trail4"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/trail3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="#8834ffd0"
+                android:text="平移"
+                android:textColor="#fff"
+                />
+
+            <ImageView
+                android:id="@+id/huanci"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/trail4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/huanci"/>
+
+        </RelativeLayout>
+
+
     </RelativeLayout>
 </ScrollView>
