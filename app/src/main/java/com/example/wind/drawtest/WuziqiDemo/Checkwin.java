@@ -1,4 +1,4 @@
-package com.example.wind.drawtest;
+package com.example.wind.drawtest.WuziqiDemo;
 
 import android.graphics.Point;
 

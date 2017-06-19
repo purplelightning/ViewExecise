@@ -11,6 +11,11 @@ import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.wind.drawtest.CircleDemo.CircleActivity;
+import com.example.wind.drawtest.DrawDemo.MyViewAcitivity;
+import com.example.wind.drawtest.WuziqiDemo.WuziqiActivity;
+import com.example.wind.drawtest.WuziqiDemo.WuziqiPanel;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
     private WuziqiPanel wuziqiPanel;
     private Button btn3, btn4, btn5, btn6, btn_all;
@@ -29,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btna1 = (Button) findViewById(R.id.paint);
         Button btna2 = (Button) findViewById(R.id.wuziqi);
         Button btna3 = (Button) findViewById(R.id.ges);
+        Button btna4=(Button)findViewById(R.id.circle);
         btn3 = (Button) findViewById(R.id.trail1);
         btn4 = (Button) findViewById(R.id.trail2);
         btn5 = (Button) findViewById(R.id.trail3);
@@ -41,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btna1.setOnClickListener(this);
         btna2.setOnClickListener(this);
         btna3.setOnClickListener(this);
+        btna4.setOnClickListener(this);
         btn3.setOnClickListener(this);
         btn4.setOnClickListener(this);
         btn5.setOnClickListener(this);
@@ -109,6 +116,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.ges:
                 Intent intent3 = new Intent(MainActivity.this, ObjectAnimatorActivity.class);
                 startActivity(intent3);
+                break;
+            case R.id.circle:
+                Intent intent4=new Intent(MainActivity.this,CircleActivity.class);
+                startActivity(intent4);
                 break;
 
             case R.id.trail1:

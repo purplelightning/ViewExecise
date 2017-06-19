@@ -9,7 +9,7 @@
     <!--
         存储与恢复要记得给要保存的View写id,否则可能会不能保存
         -->
-    <com.example.wind.drawtest.WuziqiPanel
+    <com.example.wind.drawtest.WuziqiDemo.WuziqiPanel
         android:id="@+id/id_wuziqi"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"

@@ -21,27 +21,39 @@
 
             <Button
                 android:id="@+id/paint"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
                 android:text="画图"
+
                 android:textColor="#000000"/>
 
             <Button
                 android:id="@+id/wuziqi"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
                 android:text="五子棋View"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="12sp"/>
 
             <Button
                 android:id="@+id/ges"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
                 android:text="触摸事件"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/circle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:text="CircleView"
+                android:textColor="#000000"
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -55,16 +67,16 @@
                 android:id="@+id/all_start"
                 android:layout_width="60dp"
                 android:layout_height="80dp"
-                android:background="#ff0000"
                 android:layout_marginTop="30dp"
+                android:background="#ff0000"
                 android:text="开始动画"/>
 
             <Button
                 android:id="@+id/trail1"
                 android:layout_width="120dp"
                 android:layout_height="80dp"
-                android:layout_centerHorizontal="true"
                 android:layout_alignTop="@id/all_start"
+                android:layout_centerHorizontal="true"
                 android:background="#8834ffd0"
                 android:text="放缩"
                 android:textColor="#fff"/>

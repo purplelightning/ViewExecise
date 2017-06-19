@@ -16,11 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".WuziqiActivity">
+        <activity android:name=".WuziqiDemo.WuziqiActivity">
         </activity>
-        <activity android:name=".MyViewAcitivity">
+        <activity android:name=".DrawDemo.MyViewAcitivity">
         </activity>
         <activity android:name=".ObjectAnimatorActivity">
+        </activity>
+        <activity android:name=".CircleDemo.CircleActivity">
         </activity>
     </application>
 

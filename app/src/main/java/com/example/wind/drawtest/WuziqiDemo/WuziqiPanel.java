@@ -1,7 +1,6 @@
-package com.example.wind.drawtest;
+package com.example.wind.drawtest.WuziqiDemo;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -9,7 +8,6 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.constraint.solver.ArrayLinkedVariables;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,9 +15,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import com.example.wind.drawtest.Checkwin.*;
-
-import static com.example.wind.drawtest.Checkwin.checkFiveInLine;
+import com.example.wind.drawtest.R;
 
 /**
  * Created by wind on 17-6-4.
@@ -128,8 +124,8 @@ public class WuziqiPanel extends View {
 
     private void checkGameOver()
     {
-        boolean whiteWin=checkFiveInLine(mWhiteArray);
-        boolean blackWin=checkFiveInLine(mBlackArray);
+        boolean whiteWin= Checkwin.checkFiveInLine(mWhiteArray);
+        boolean blackWin= Checkwin.checkFiveInLine(mBlackArray);
 
         if(whiteWin||blackWin)
         {
