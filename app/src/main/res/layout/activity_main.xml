@@ -42,7 +42,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
-                android:text="触摸事件"
+                android:text="属性动画"
                 android:textColor="#000000"
                 android:textSize="12sp"/>
 
