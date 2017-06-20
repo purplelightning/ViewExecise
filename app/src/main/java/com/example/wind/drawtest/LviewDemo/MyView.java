@@ -1,4 +1,4 @@
-package com.example.wind.drawtest.DrawDemo;
+package com.example.wind.drawtest.LviewDemo;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -24,7 +24,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
-                android:text="画图"
+                android:text="LView"
 
                 android:textColor="#000000"/>
 
@@ -52,6 +52,15 @@
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
                 android:text="CircleView"
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/draw"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:text="Drawable"
                 android:textColor="#000000"
                 android:textSize="12sp"/>
 

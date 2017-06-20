@@ -18,11 +18,13 @@
         </activity>
         <activity android:name=".WuziqiDemo.WuziqiActivity">
         </activity>
-        <activity android:name=".DrawDemo.MyViewAcitivity">
+        <activity android:name=".LviewDemo.MyViewAcitivity">
         </activity>
         <activity android:name=".ObjectAnimatorActivity">
         </activity>
         <activity android:name=".CircleDemo.CircleActivity">
+        </activity>
+        <activity android:name=".Drawablesample.DrawableActivity">
         </activity>
     </application>
 
