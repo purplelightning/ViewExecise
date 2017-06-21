@@ -13,6 +13,7 @@ import android.widget.ImageView;
 
 import com.example.wind.drawtest.CircleDemo.CircleActivity;
 import com.example.wind.drawtest.Drawablesample.DrawableActivity;
+import com.example.wind.drawtest.HorizontalScroll.HorizontalScrollActivity;
 import com.example.wind.drawtest.LviewDemo.MyViewAcitivity;
 import com.example.wind.drawtest.WuziqiDemo.WuziqiActivity;
 import com.example.wind.drawtest.WuziqiDemo.WuziqiPanel;
@@ -35,8 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btna1 = (Button) findViewById(R.id.paint);
         Button btna2 = (Button) findViewById(R.id.wuziqi);
         Button btna3 = (Button) findViewById(R.id.ges);
-        Button btna4=(Button)findViewById(R.id.circle);
-        Button btna5=(Button) findViewById(R.id.draw);
+        Button btna4 = (Button) findViewById(R.id.circle);
+        Button btna5 = (Button) findViewById(R.id.draw);
+        Button btna6 = (Button) findViewById(R.id.hori);
         btn3 = (Button) findViewById(R.id.trail1);
         btn4 = (Button) findViewById(R.id.trail2);
         btn5 = (Button) findViewById(R.id.trail3);
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btna3.setOnClickListener(this);
         btna4.setOnClickListener(this);
         btna5.setOnClickListener(this);
+        btna6.setOnClickListener(this);
         btn3.setOnClickListener(this);
         btn4.setOnClickListener(this);
         btn5.setOnClickListener(this);
@@ -61,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btna1.setOnTouchListener(this);
         btna2.setOnTouchListener(this);
         btna3.setOnTouchListener(this);
+        btna4.setOnTouchListener(this);
+        btna5.setOnTouchListener(this);
+        btna6.setOnTouchListener(this);
 
         initAnimation();
     }
@@ -121,12 +127,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent3);
                 break;
             case R.id.circle:
-                Intent intent4=new Intent(MainActivity.this,CircleActivity.class);
+                Intent intent4 = new Intent(MainActivity.this, CircleActivity.class);
                 startActivity(intent4);
                 break;
             case R.id.draw:
-                Intent intent5=new Intent(MainActivity.this,DrawableActivity.class);
+                Intent intent5 = new Intent(MainActivity.this, DrawableActivity.class);
                 startActivity(intent5);
+                break;
+            case R.id.hori:
+                Intent intent6 = new Intent(MainActivity.this, HorizontalScrollActivity.class);
+                startActivity(intent6);
                 break;
 
             case R.id.trail1:

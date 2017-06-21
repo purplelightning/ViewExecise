@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".Drawablesample.DrawableActivity">
         </activity>
+        <activity android:name=".HorizontalScroll.HorizontalScrollActivity">
+        </activity>
     </application>
 
 </manifest>
